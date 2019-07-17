@@ -40,4 +40,95 @@ var dragonPark = new Park(false, true, true, true, false, true, true);
 var hobbitPark = new Park(true, false, true, true, true, false, false);
 var galaxyPark = new Park(false, true, true, true, false, true, false);
 
+//   if ($("#rainbow-result").val() === true) {
+//     $("#rainbow-result").show();
+//   }
+//
+// }
+
+// function myFunction() {
+// // Get the checkbox
+// var checkBox = document.getElementById("myCheck");
+// // Get the output text
+// var text = document.getElementById("text");
+//
+// // If the checkbox is checked, display the output text
+// if (checkBox.checked == true){
+//   text.style.display = "block";
+// } else {
+//   text.style.display = "none";
+// }
+// }
+
+// $("#results").hide();
+
+function showRainbowPark() {
+  // Get the checkbox
+  var checkBox = document.getElementById("rainbow");
+  // Get the output text
+  var text = document.getElementById("rainbow-result");
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+
+function showUnicornPark() {
+  // Get the checkbox
+  var checkBox = document.getElementById("unicorn");
+  // Get the output text
+  var text = document.getElementById("unicorn-result");
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+
+function showDragonPark() {
+  // Get the checkbox
+  var checkBox = document.getElementById("dragon");
+  // Get the output text
+  var text = document.getElementById("dragon-result");
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+
+function showHobbitPark() {
+  // Get the checkbox
+  var checkBox = document.getElementById("hobbit");
+  // Get the output text
+  var text = document.getElementById("hobbit-result");
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+
+function showGalaxyPark() {
+  // Get the checkbox
+  var checkBox = document.getElementById("galaxy");
+  // Get the output text
+  var text = document.getElementById("galaxy-result");
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+
 //UI Logic
+
+$(document).ready(function() {
+
+});
