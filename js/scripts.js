@@ -1,6 +1,8 @@
 //Business Logic
-function Park(name, playground, parking, garden, restroom, accessibility, zone, pool) {
+function Park(name, keyword, playground, parking, garden, restroom, accessibility, zone, pool) {
   this.name = name;
+  //add new key for keywords (as defined below) - seems more efficient for moving into arrays (as in parkNames array for showing/hiding all) - while retaining key for full park name seems worthwhile
+  this.keyword = keyword;
   this.playground = playground;
   this.parking = parking;
   this.garden = garden;
@@ -11,11 +13,12 @@ function Park(name, playground, parking, garden, restroom, accessibility, zone, 
 }
 
 //Create a new object for each park
-var rainbowPark = new Park("Rainbow Park", true, false, true, true, false, true, true);
-var unicornPark = new Park("Unicorn Park", true, true, false, true, true, false, true);
-var dragonPark = new Park("Dragon Park", false, true, true, true, false, true, true);
-var hobbitPark = new Park("Hobbit Park", true, false, true, true, true, false, false);
-var galaxyPark = new Park("Galaxy Park", false, true, true, true, false, true, false);
+//note to Winter: we looked over these together and changed just a few based on the images and whatnot that Breken & Aruna had already planned out - fortunately I think the way you wrote the code for building arrays and whatnot, it s
+var rainbowPark = new Park("Rainbow Park", "rainbow", true, false, true, true, false, true, true);
+var unicornPark = new Park("Unicorn Park", "unicorn", true, false, true, true, true, false, true);
+var dragonPark = new Park("Dragon Park", "dragon", true, true, false, true, false, true, false);
+var hobbitPark = new Park("Hobbit Park", "hobbit", true, false, true, true, true, false, true);
+var galaxyPark = new Park("Galaxy Park", "galaxy", false, true, true, false, false, true, true);
 
 //Array of park objects
 var parkObjects = [rainbowPark, unicornPark, dragonPark, hobbitPark, galaxyPark];
@@ -31,7 +34,7 @@ var poolParks = [];
 function findPlaygroundParks(park) {
   parkObjects.forEach(function(park) {
     if (park.playground == true) {
-      playgroundParks.push(park.name);
+      playgroundParks.push(park.keyword);
     }
   });
 }
@@ -39,7 +42,7 @@ function findPlaygroundParks(park) {
 function findParkingParks(park) {
   parkObjects.forEach(function(park) {
     if (park.parking == true) {
-      parkingParks.push(park.name);
+      parkingParks.push(park.keyword);
     }
   });
 }
@@ -47,7 +50,7 @@ function findParkingParks(park) {
 function findGardenParks(park) {
   parkObjects.forEach(function(park) {
     if (park.garden == true) {
-      gardenParks.push(park.name);
+      gardenParks.push(park.keyword);
     }
   });
 }
@@ -55,7 +58,7 @@ function findGardenParks(park) {
 function findRestroomParks(park) {
   parkObjects.forEach(function(park) {
     if (park.restroom == true) {
-      restroomParks.push(park.name);
+      restroomParks.push(park.keyword);
     }
   });
 }
@@ -63,7 +66,7 @@ function findRestroomParks(park) {
 function findAccesibilityParks(park) {
   parkObjects.forEach(function(park) {
     if (park.accessibility == true) {
-      accessibilityParks.push(park.name);
+      accessibilityParks.push(park.keyword);
     }
   });
 }
@@ -71,7 +74,7 @@ function findAccesibilityParks(park) {
 function findZoneParks(park) {
   parkObjects.forEach(function(park) {
     if (park.zone == true) {
-      zoneParks.push(park.name);
+      zoneParks.push(park.keyword);
     }
   });
 }
@@ -79,7 +82,7 @@ function findZoneParks(park) {
 function findPoolParks(park) {
   parkObjects.forEach(function(park) {
     if (park.pool == true) {
-      poolParks.push(park.name);
+      poolParks.push(park.keyword);
     }
   });
 }
