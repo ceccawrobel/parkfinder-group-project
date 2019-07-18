@@ -90,19 +90,19 @@ function findPoolParks(park) {
 //Array of park name KEYWORDS for manipulating the DOM
 var parkNames = ["rainbow", "unicorn", "dragon", "hobbit", "galaxy"];
 
-//To show all parks with jQuery
-function showAllParks() {
-  parkNames.forEach(function(park) {
-    $("#" + park + "-result").show();
-  });
-}
-
-//To hide all parks with jQuery
-function hideAllParks() {
-  parkNames.forEach(function(park) {
-    $("#" + park + "-result").hide();
-  });
-}
+// //To show all parks with jQuery
+// function showAllParks() {
+//   parkNames.forEach(function(park) {
+//     $("#" + park + "-result").show();
+//   });
+// }
+//
+// //To hide all parks with jQuery
+// function hideAllParks() {
+//   parkNames.forEach(function(park) {
+//     $("#" + park + "-result").hide();
+//   });
+// }
 
 // function showPlaygroundParks() {
 //
@@ -118,72 +118,72 @@ function hideAllParks() {
 
 //OLD CODE BELOW. NEEDS TO BE REFACTORED. (Refactoring taking place above)
 
-//Simple functions to show the parks (jQuery version)
-function showRainbowPark() {
-  $("#rainbow-result").show();
-}
+// //Simple functions to show the parks (jQuery version)
+// function showRainbowPark() {
+//   $("#rainbow-result").show();
+// }
+//
+// function showUnicornPark() {
+//   $("#unicorn-result").show();
+// }
 
-function showUnicornPark() {
-  $("#unicorn-result").show();
-}
 
+// //Simple functions to show the parks (pure JS version)
+// function showUnicornPark() {
+//   var text = document.getElementById("unicorn-result");
+//   text.style.display = "block";
+// }
+//
+// function showDragonPark() {
+//   var text = document.getElementById("dragon-result");
+//   text.style.display = "block";
+// }
+//
+// function showHobbitPark() {
+//   var text = document.getElementById("hobbit-result");
+//   text.style.display = "block";
+// }
+//
+// function showGalaxyPark() {
+//   var text = document.getElementById("galaxy-result");
+//   text.style.display = "block";
+// }
+//
+// //Simple functions to hide the parks
+// function hideRainbowPark() {
+//   $("#rainbow-result").hide();
+// }
+//
+// function hideUnicornPark() {
+//   var text = document.getElementById("unicorn-result");
+//   text.style.display = "none";
+// }
+//
+// function hideDragonPark() {
+//   var text = document.getElementById("dragon-result");
+//   text.style.display = "none";
+// }
+//
+// function hideHobbitPark() {
+//   var text = document.getElementById("hobbit-result");
+//   text.style.display = "none";
+// }
+//
+// function hideGalaxyPark() {
+//   var text = document.getElementById("galaxy-result");
+//   text.style.display = "none";
+// }
 
-//Simple functions to show the parks (pure JS version)
-function showUnicornPark() {
-  var text = document.getElementById("unicorn-result");
-  text.style.display = "block";
-}
-
-function showDragonPark() {
-  var text = document.getElementById("dragon-result");
-  text.style.display = "block";
-}
-
-function showHobbitPark() {
-  var text = document.getElementById("hobbit-result");
-  text.style.display = "block";
-}
-
-function showGalaxyPark() {
-  var text = document.getElementById("galaxy-result");
-  text.style.display = "block";
-}
-
-//Simple functions to hide the parks
-function hideRainbowPark() {
-  $("#rainbow-result").hide();
-}
-
-function hideUnicornPark() {
-  var text = document.getElementById("unicorn-result");
-  text.style.display = "none";
-}
-
-function hideDragonPark() {
-  var text = document.getElementById("dragon-result");
-  text.style.display = "none";
-}
-
-function hideHobbitPark() {
-  var text = document.getElementById("hobbit-result");
-  text.style.display = "none";
-}
-
-function hideGalaxyPark() {
-  var text = document.getElementById("galaxy-result");
-  text.style.display = "none";
-}
-
-//Complex functions sorted by feature
-function showPlayground() {
-  var checkBox = document.getElementById("playground");
-  var text = document.getElementById("playground-result");
-  if (checkBox.checked == true){
-  text.style.display = "block";
-  } else {
-   text.style.display = "none";
- }
-}
+// //Complex functions sorted by feature
+// function showPlayground() {
+//   var checkBox = document.getElementById("playground");
+//   var text = document.getElementById("playground-result");
+//   if (checkBox.checked == true){
+//   text.style.display = "block";
+//   } else {
+//    text.style.display = "none";
+//  }
+// }
 
 //UI Logic
 $(document).ready(function() {
