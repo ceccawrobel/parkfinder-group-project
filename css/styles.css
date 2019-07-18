@@ -1,16 +1,42 @@
 body {
   margin-top: 35px;
   margin-bottom: 35px;
-  /* background-color: #ecf9f2; */
+  padding: 20px;
+  background-image: url("../Images/Background3.jpg");
+  background-position: center;
+  background-size: cover;
+  font-family: fantasy;
+  color: #e6ffe6;
+}
+h2 {
+  margin: 10px;
+}
+nav {
+  color: #cc99ff;
 }
 
-h4, p {
-  color: grey;
+.jumbotron {
+  background-color: rgba(0, 51, 0, 0.9);
 }
+
+nav a {
+  color: green;
+}
+
+body > div > nav > a.nav-item.nav-link.active {
+  background-color: green;
+}
+
+.checkboxes {
+  margin: 20px;
+}
+/* h4, p {
+  color: grey;
+} */
 
 .col-sm-4 {
-  border-style: dotted;
-  border-color: gray;
+  /* border-style: dotted;
+  border-color: gray; */
 }
 
 .hidden {
