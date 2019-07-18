@@ -88,6 +88,7 @@
       </form> -->
 
       <!--Example checkboxes to see if I can get the JS to work-->
+      <form>
       <h3>What amenities would you like in your park?</h3>
       <!-- <div class="checkboxes">
         <input type="checkbox" name="amenities" value="playground" id="playground" onlick="rainbowPark()">Pegasus Playground<br>
@@ -100,15 +101,18 @@
       </div> -->
       <!-- <h2>Click on the name of the park to view more information.</h2> -->
       <div class="checkboxes">
-        <input type="checkbox" name="parks" value="rainbow" id="rainbow" onclick="showRainbowPark(); showUnicornPark(); showHobbitPark(); hideDragonPark(); hideGalaxyPark()">Pegasus Playground<br>
+        <input type="checkbox" name="parks" value="rainbow" id="playground" onclick="showRainbowPark(); showUnicornPark(); showHobbitPark(); hideDragonPark(); hideGalaxyPark()">Pegasus Playground<br>
         <input type="checkbox" name="parks" value="unicorn" id="unicorn" onclick="showRainbowPark(); showDragonPark(); showHobbitPark(); showGalaxyPark(); hideRainbowPark()">Broomstick Parking<br>
         <input type="checkbox" name="parks" value="dragon" id="dragon" onclick="hideGalaxyPark()">Fairy Garden<br>
         <input type="checkbox" name="parks" value="hobbit" id="hobbit" onclick="showRainbowPark(); showUnicornPark(); showDragonPark(); showHobbitPark(); hideGalaxyPark()">Restroom<br>
-        <input type="checkbox" name="parks" value="galaxy" id="galaxy" onclick="showGalaxyPark(); showDragonPark(); showHobbitPark; showUnicornPark(); hideRainbowPark();">Accessibility<br>
+        <input type="checkbox" name="parks" value="galaxy" id="galaxy" onclick="showAccessibility();">Hoverchair Accessibility<br>
         <input type="checkbox" name="parks" value="galaxy" id="galaxy" onclick=" showDragonPark(); showGalaxyPark(); hideRainbowPark(); hideHobbitPark();">Ghost Zone<br>
-        <input type="checkbox" name="parks" value="galaxy" id="galaxy" onclick="showHobbitPark(); showDragonPark(); showGalaxyPark(); hideRainbowPark();">Mermaid Pool<br>
+        <input type="checkbox" name="parks" value="galaxy" id="galaxy" onclick="showHobbitPark(); showDragonPark(); showGalaxyPark(); hideRainbowPark();">Mermaid Pool<br><br>
       </div>
-      <!-- <button type="button">Reset</button> -->
+      <button type="submit">Submit</button>
+      </form>
+      <button type="button" class="btn btn-outline-dark" onclick="showAllParks()">Show All Parks</button>
+      <button type="button" class="btn btn-outline-dark" onclick="hideAllParks()">Hide All Parks</button>
       <br>
 
       <!--Results div-->
