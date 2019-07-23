@@ -84,8 +84,8 @@ function displayResults() {
 }
 
 function displayNoResults() {
-  $("#no-result-message").show();
-  showAllParks();
+  $("#no-results").show();
+  // showAllParks();
 
 }
 
@@ -151,7 +151,7 @@ $(document).ready(function() {
   $("#no-results").hide();
   $("form").submit(function(event) {
     event.preventDefault();
-    $("form").hide();
+    // $("form").hide();
     //Clear the form here
     //Have a popup box to tell them to answer all the questions if they haven't
 
