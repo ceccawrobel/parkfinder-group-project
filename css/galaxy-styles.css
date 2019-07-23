@@ -11,10 +11,9 @@ body {
 
 h1 {
   color: black;
-  font-size: 40px;
-  font-family:cursive;
+  font-family:fantasy;
+  font-size: 50px;
   text-align:center;
-  color: #000099
 }
 
 .item {
@@ -23,7 +22,7 @@ h1 {
 }
 
 .parallax {
-  background-image: url("../img/rainbow_park.jpg");
+  background-image: url("../img/galaxy.jpeg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -32,5 +31,5 @@ h1 {
 }
 .page-header {
   text-transform: uppercase;
-  letter-spacing: .2em;
+  letter-spacing: .1em;
 }
