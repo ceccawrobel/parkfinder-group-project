@@ -33,3 +33,22 @@ h1 {
 
   letter-spacing: .2em;
 }
+
+/* to keep nav bar consistent with other pages */
+a.nav-item.nav-link {
+  color: #15572469;
+}
+a.nav-item.nav-link.active {
+  color: #fff7e6;
+  background-color: #15572469;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* nav {
+  color: #cc99ff;
+}
+
+nav a {
+  color: green;
+} */

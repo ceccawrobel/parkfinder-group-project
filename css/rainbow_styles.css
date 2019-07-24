@@ -45,3 +45,11 @@ a.nav-item.nav-link.active {
   margin-left: 10px;
   margin-right: 10px;
 }
+
+nav {
+  color: #cc99ff;
+}
+
+nav a {
+  color: green;
+}
