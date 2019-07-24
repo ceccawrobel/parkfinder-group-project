@@ -5,16 +5,15 @@ html {
 
 body {
   background-size:cover;
-  background-color: cream;
+  background-color: #fff7e6;
   height: 100%;
 }
 
 h1 {
-  color: black;
-  font-size: 40px;
+  font-size: 60px;
   font-family:cursive;
   text-align:center;
-  color: #000099
+  color: #155724;
 }
 
 .item {
@@ -23,7 +22,7 @@ h1 {
 }
 
 .parallax {
-  background-image: url("../img/rainbow_park.jpg");
+  background-image: url("../img/rainbow2.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,4 +32,65 @@ h1 {
 .page-header {
   text-transform: uppercase;
   letter-spacing: .2em;
+}
+
+h2 {
+  margin: 15px;
+}
+h3 {
+  margin: 15px;
+}
+
+h5 {
+  margin: 15px;
+}
+
+a.nav-item.nav-link {
+  color: #15572469;
+}
+a.nav-item.nav-link.active {
+  color: #fff7e6;
+  background-color: #15572469;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav {
+  color: #cc99ff;
+}
+
+nav a {
+  color: green;
+}
+
+.jumbotron {
+  background-color: #15572469;
+}
+
+.checkboxes {
+  margin: 20px;
+  padding: 10px;
+}
+
+
+div.button-set {
+  margin: 10px;
+}
+
+label.radio-inline {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+}
+label.radio {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.hidden {
+  display: none;
 }
