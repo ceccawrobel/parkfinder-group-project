@@ -103,7 +103,7 @@ function hideAllParks() {
 }
 
 function resetForm() {
-  hideAllParks();
+  location.reload();
   $("#amenity-selection").trigger("reset");
 
 }
