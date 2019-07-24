@@ -85,7 +85,7 @@ function displayResults() {
 
 function displayNoResults() {
   $("#no-results").show();
-  // showAllParks();
+  showAllParks();
 
 }
 
@@ -100,6 +100,12 @@ function hideAllParks() {
   parkKeywords.forEach(function(park) {
     $("#" + park + "-result").hide();
   });
+}
+
+function resetForm() {
+  hideAllParks();
+  $("#amenity-selection").trigger("reset");
+
 }
 
 
@@ -151,11 +157,11 @@ $(document).ready(function() {
   $("#no-results").hide();
   $("form").submit(function(event) {
     event.preventDefault();
-<<<<<<< HEAD
+// <<<<<<< HEAD
+//     // $("form").hide();
+// =======
     // $("form").hide();
-=======
-    $("form").hide();
->>>>>>> a81bfc086aeec9fde05e74d022b2bd5edc689a74
+// >>>>>>> a81bfc086aeec9fde05e74d022b2bd5edc689a74
     //Clear the form here
     //Have a popup box to tell them to answer all the questions if they haven't
 

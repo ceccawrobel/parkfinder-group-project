@@ -94,3 +94,7 @@ label.radio {
 .hidden {
   display: none;
 }
+
+.button-set {
+  text-align: left;
+}
