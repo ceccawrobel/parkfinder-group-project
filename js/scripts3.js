@@ -85,7 +85,7 @@ function displayResults() {
 
 function displayNoResults() {
   $("#no-results").show();
-  // showAllParks();
+  showAllParks();
 
 }
 
@@ -100,6 +100,12 @@ function hideAllParks() {
   parkKeywords.forEach(function(park) {
     $("#" + park + "-result").hide();
   });
+}
+
+function resetForm() {
+  hideAllParks();
+  $("#amenity-selection").trigger("reset");
+
 }
 
 

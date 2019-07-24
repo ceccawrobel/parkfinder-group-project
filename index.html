@@ -31,7 +31,7 @@
     <div class="container">
       <h2>New to Pandamonium? Come explore the parks we have in store!</h2>
         <h3>Tell us about the ammenities you are looking for!</h3>
-      <form>
+      <form id="amenity-selection">
         <div class="radio-buttons">
         <!--Playground buttons-->
           <div class="button-set">
@@ -51,12 +51,12 @@
                   Prefer
                 </label>
               </div>
-              <div class="col-sm-3s">
+              <!-- <div class="col-sm-3s">
                 <label class="radio">
                   <input type="radio" name="playground" value="">
                   Don't care
                 </label>
-              </div>
+              </div> -->
             </div>
           </div>
         <!--Parking buttons-->
@@ -77,12 +77,12 @@
                   Prefer
                 </label>
               </div>
-              <div class="col-sm-3s">
+              <!-- <div class="col-sm-3s">
                 <label class="radio">
                   <input type="radio" name="parking" value="">
                   Don't care
                 </label>
-              </div>
+              </div> -->
             </div>
           </div>
         <!--Garden buttons-->
@@ -103,12 +103,12 @@
                   Prefer
                 </label>
               </div>
-              <div class="col-sm-3s">
+              <!-- <div class="col-sm-3s">
                 <label class="radio">
                   <input type="radio" name="garden" value="">
                   Don't care
                 </label>
-              </div>
+              </div> -->
             </div>
           </div>
         <!--Restroom buttons-->
@@ -129,11 +129,11 @@
                   Prefer
                 </label>
               </div>
-              <div class="col-sm-3s">
+              <!-- <div class="col-sm-3s">
                 <label class="radio">
                   <input type="radio" name="restroom" value="">
                   Don't care
-                </label>
+                </label> -->
               </div>
             </div>
           </div>
@@ -155,12 +155,12 @@
                   Prefer
                 </label>
               </div>
-              <div class="col-sm-3s">
+              <!-- <div class="col-sm-3s">
                 <label class="radio">
                   <input type="radio" name="accessibility" value="">
                   Don't care
                 </label>
-              </div>
+              </div> -->
             </div>
           </div>
         <!--Zone buttons-->
@@ -181,11 +181,11 @@
                   Prefer
                 </label>
               </div>
-              <div class="col-sm-3s">
+              <!-- <div class="col-sm-3s">
                 <label class="radio">
                   <input type="radio" name="zone" value="">
                   Don't care
-                </label>
+                </label> -->
               </div>
             </div>
           </div>
@@ -207,15 +207,17 @@
                   Prefer
                 </label>
               </div>
-              <div class="col-sm-3s">
+              <!-- <div class="col-sm-3s">
                 <label class="radio">
                   <input type="radio" name="pool" value="">
                   Don't care
                 </label>
-              </div>
+              </div> -->
             </div>
           </div>
-          <button type="submit" class="btn btn-outline-dark">Submit</button><br><br>
+          <button type="submit" class="btn btn-outline-dark">Submit</button>
+          <button type="button" class="btn btn-outline-dark" onclick="resetForm()">Reset</button>
+          <br><br>
         </form>
         <button type="button" class="btn btn-outline-dark" onclick="showAllParks()">Show All Parks</button>
         <button type="button" class="btn btn-outline-dark" onclick="hideAllParks()">Hide All Parks</button>
@@ -232,6 +234,11 @@
 
   <!--Results div-->
   <div class="container" id="results">
+    <div class="row">
+      <div id="no-results" class="col-sm-12 hidden">
+        Sorry, no parks matched all of your needs! Here are all of the parks:
+      </div>
+    </div>
     <div class="row">
       <div id="rainbow-result" class="col-sm-6 hidden">
 
