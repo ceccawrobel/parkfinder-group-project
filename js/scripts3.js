@@ -85,7 +85,7 @@ function displayResults() {
 
 function displayNoResults() {
   $("#no-results").show();
-  showAllParks();
+  // showAllParks();
 
 }
 
