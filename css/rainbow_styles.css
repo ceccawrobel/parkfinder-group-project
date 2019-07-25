@@ -11,11 +11,10 @@ body {
 
 h1 {
   color: black;
-  font-family:cursive;
-  font-size: 50px;
+  font-family: cursive;
+  font-size: 60px;
   text-align:center;
-  color: #000099
-
+  color: #155724;
 }
 
 .item {
@@ -32,6 +31,28 @@ h1 {
   height: 100%;
 }
 .page-header {
-  text-transform: uppercase;
-  letter-spacing: .1em;
+
+  letter-spacing: .2em;
+}
+
+/* to keep nav bar consistent with other pages */
+a.nav-item.nav-link {
+  color: #15572469;
+}
+a.nav-item.nav-link.active {
+  color: #fff7e6;
+  background-color: #15572469;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+nav {
+  color: #cc99ff;
+}
+
+nav a {
+  color: green;
+}
+.jumbotron {
+  background-color: #15572469;
 }
