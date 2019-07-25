@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!--Bootstrap, Google fonts, and my custom CSS-->
+  <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -36,8 +37,8 @@
         <!--Playground buttons-->
           <div class="button-set">
             <div class="row">
-              <div class="col-sm-2">
-                <!-- amenity icon can go here -->
+              <div class="col-sm-1">
+                <i class="fa fa-child"></i>
               </div>
               <div class="col-sm-3">
                 <label class="radio-inline"><strong>Pegasus Playground</strong></label>
@@ -65,8 +66,8 @@
     <!--Parking buttons-->
           <div class="button-set">
             <div class="row">
-              <div class="col-sm-2">
-                <!-- amenity icon can go here -->
+              <div class="col-sm-1">
+                <i class="fa fa-broom"></i>
               </div>
               <div class="col-sm-3">
                 <label class="radio-inline"><strong>Broomstick Parking</strong></label>
@@ -94,8 +95,8 @@
     <!--Garden buttons-->
           <div class="button-set">
             <div class="row">
-              <div class="col-sm-2">
-                <!-- amenity icon can go here -->
+              <div class="col-sm-1">
+                <i class="fab fa-envira"></i>
               </div>
               <div class="col-sm-3">
                 <label class="radio-inline"><strong>Fairy Garden</strong></label>
@@ -123,8 +124,8 @@
     <!--Restroom buttons-->
           <div class="button-set">
             <div class="row">
-              <div class="col-sm-2">
-                <!-- amenity icon can go here -->
+              <div class="col-sm-1">
+                <i class="fa fa-restroom"></i>
               </div>
               <div class="col-sm-3">
                 <label class="radio-inline"><strong>Restroom</strong></label>
@@ -151,8 +152,8 @@
     <!--Accessibility buttons-->
           <div class="button-set">
             <div class="row">
-              <div class="col-sm-2">
-                <!-- amenity icon can go here -->
+              <div class="col-sm-1">
+                <i class="fab fa-accessible-icon"></i>
               </div>
               <div class="col-sm-3">
                 <label class="radio-inline"><strong>Hoverchair Accessibility</strong></label>
@@ -180,8 +181,8 @@
     <!--Zone buttons-->
           <div class="button-set">
             <div class="row">
-              <div class="col-sm-2">
-                <!-- amenity icon can go here -->
+              <div class="col-sm-1">
+                <i class="fa fa-ghost"></i>
               </div>
               <div class="col-sm-3">
                 <label class="radio-inline"><strong>Ghost Zone</strong></label>
@@ -208,8 +209,8 @@
     <!--Pool buttons-->
           <div class="button-set">
             <div class="row">
-              <div class="col-sm-2">
-                <!-- amenity icon can go here -->
+              <div class="col-sm-1">
+                <i class="fas fa-swimmer"></i>
               </div>
               <div class="col-sm-3">
                 <label class="radio-inline"><strong>Mermaid Pool</strong></label>
@@ -249,15 +250,18 @@
 
   </div>
   <br>
-  <!-- <button type="button" class="btn btn-outline-dark" onclick="showAllParks()">Show All Parks</button>
-  <button type="button" class="btn btn-outline-dark" onclick="hideAllParks()">Hide All Parks</button>
+
+  <!-- <button type="button" class="btn btn-outline-dark" onclick="hideAllParks()">Hide All Parks</button>
   <br> -->
 
   <!--Results div-->
   <div class="container" id="results">
     <div class="row">
       <div id="no-results" class="col-sm-12 hidden">
-        Sorry, no parks matched all of your needs! Here are all of the parks:
+        <strong>Sorry, no parks matched all of your needs!</strong><br> <button type="button" class="btn btn-outline-dark" onclick="showAllParks()">Show All Parks</button>
+      </div>
+      <div id="no-selections" class="col-sm-12 hidden">
+        <strong>You did not enter any preferences.</strong><br> <button type="button" class="btn btn-outline-dark" onclick="showAllParks()">Show All Parks</button>
       </div>
     </div>
     <div class="row">

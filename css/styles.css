@@ -10,11 +10,19 @@ body {
 }
 
 h1 {
-  color: black;
-  font-family: cursive;
   font-size: 60px;
+  font-family:cursive;
   text-align:center;
   color: #155724;
+}
+h5
+  {
+   font-size: 20px;
+   font-family:cursive;
+   text-align:center;
+   color: #155724;
+   margin: 15px;
+
 }
 
 .item {
@@ -31,26 +39,20 @@ h1 {
   height: 100%;
 }
 .page-header {
-
+  text-transform: uppercase;
   letter-spacing: .2em;
 }
 
 h2 {
   margin: 15px;
 }
-h3 {
-  margin: 15px;
-}
 
-h5 {
-  margin: 15px;
-}
 
 a.nav-item.nav-link {
   color: #15572469;
 }
 a.nav-item.nav-link.active {
-  color: #fff7e6;
+  color: black;
   background-color: #15572469;
   margin-left: 10px;
   margin-right: 10px;
@@ -60,6 +62,8 @@ nav {
   color: #cc99ff;
 }
 
+
+}
 nav a {
   color: green;
 }
@@ -98,4 +102,8 @@ label.radio {
 
 .button-set {
   text-align: left;
+}
+
+.rainbow-paragraph{
+  font-family:inherit;
 }
