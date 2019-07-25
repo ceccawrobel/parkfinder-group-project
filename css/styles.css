@@ -10,8 +10,9 @@ body {
 }
 
 h1 {
+  color: black;
+  font-family: cursive;
   font-size: 60px;
-  font-family:cursive;
   text-align:center;
   color: #155724;
 }
@@ -30,7 +31,7 @@ h1 {
   height: 100%;
 }
 .page-header {
-  text-transform: uppercase;
+
   letter-spacing: .2em;
 }
 

@@ -5,15 +5,16 @@ html {
 
 body {
   background-size:cover;
-  background-color: cream;
+  background-color: #fff7e6;
   height: 100%;
 }
 
 h1 {
   color: black;
-  font-family:fantasy;
-  font-size: 50px;
+  font-family: cursive;
+  font-size: 60px;
   text-align:center;
+  color: #155724;
 }
 
 .item {
@@ -22,7 +23,7 @@ h1 {
 }
 
 .parallax {
-  background-image: url("../img/galaxy.jpeg");
+  background-image: url("../img/galaxy1.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -30,8 +31,8 @@ h1 {
   height: 100%;
 }
 .page-header {
-  text-transform: uppercase;
-  letter-spacing: .1em;
+
+  letter-spacing: .2em;
 }
 
 /* to keep nav bar consistent with other pages */
@@ -51,4 +52,7 @@ nav {
 
 nav a {
   color: green;
+}
+.jumbotron {
+  background-color: #15572469;
 }

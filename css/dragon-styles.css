@@ -1,20 +1,21 @@
+
 html {
   height: 100%;
 }
 
 body {
   background-size:cover;
-  background-color: cream;
+  background-color: #fff7e6;
   height: 100%;
 }
 
 h1 {
   color: black;
-  font-size: 40px;
-  font-family:cursive;
+  font-family: cursive;
+  font-size: 60px;
   text-align:center;
-    color: #000099
-  }
+  color: #155724;
+}
 
 .item {
   width:100px;
@@ -22,7 +23,7 @@ h1 {
 }
 
 .parallax {
-  background-image: url("../img/dragon.jpeg");
+  background-image: url("../img/mountains1.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -51,4 +52,7 @@ nav {
 
 nav a {
   color: green;
+}
+.jumbotron {
+  background-color: #15572469;
 }
